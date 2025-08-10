@@ -1,0 +1,90 @@
+/* Tema celeste transparente para toda la app */
+:root {
+  --celeste: 173, 216, 230; /* lightblue */
+  --celeste-2: 135, 206, 235; /* skyblue */
+  --overlay-alpha: 0.18;
+  --surface-alpha: 0.35;
+  --border-alpha: 0.25;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(var(--celeste), 0.20), rgba(var(--celeste), 0) 50%),
+    radial-gradient(circle at 80% 90%, rgba(var(--celeste-2), 0.22), rgba(var(--celeste-2), 0) 50%),
+    linear-gradient(180deg, rgba(var(--celeste), 0.08), rgba(var(--celeste), 0.08));
+  background-color: #f8fbff;
+}
+
+/* Navbar translúcida con tono celeste */
+.navbar {
+  background-color: rgba(var(--celeste), var(--surface-alpha)) !important;
+  backdrop-filter: saturate(150%) blur(6px);
+  -webkit-backdrop-filter: saturate(150%) blur(6px);
+  border-bottom: 1px solid rgba(var(--celeste), var(--border-alpha));
+}
+
+/* Superficies tipo vidrio para tarjetas, menús y modales */
+.card,
+.dropdown-menu,
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(var(--celeste), var(--border-alpha));
+}
+
+/* Alertas y listas con leve transparencia */
+.alert,
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(var(--celeste), 0.2);
+}
+
+/* Inputs con borde celeste sutil */
+.form-control,
+.form-select {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(var(--celeste), 0.35);
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--celeste), 0.25);
+  border-color: rgba(var(--celeste), 0.6);
+}
+
+/* Botón primario en gama celeste */
+.btn-primary {
+  background-color: rgb(32, 132, 197);
+  border-color: rgb(32, 132, 197);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: rgb(24, 118, 182);
+  border-color: rgb(24, 118, 182);
+}
+
+/* Enlaces en tonos azules */
+a {
+  color: rgb(24, 118, 182);
+}
+a:hover {
+  color: rgb(16, 97, 155);
+}
+
+/* Utilidad opcional para secciones con vidrio */
+.glass-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(var(--celeste), var(--border-alpha));
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Pie de página sutil */
+footer {
+  color: rgba(0, 0, 0, 0.55);
+}

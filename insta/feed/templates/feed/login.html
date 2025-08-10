@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block title %}Iniciar sesión | Instagram Clone
+{%endblock %} {% block content %}
+<h2 class="mb-4">Iniciar sesión</h2>
+<form method="post" class="mb-3">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Entrar</button>
+</form>
+<p>¿No tienes cuenta? <a href="{% url 'feed:register' %}">Regístrate</a></p>
+{% endblock %}
