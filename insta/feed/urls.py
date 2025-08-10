@@ -1,7 +1,6 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
-from django.views.generic.base import RedirectView
 
 
 app_name = 'feed'
@@ -18,8 +17,9 @@ urlpatterns = [
     path('profile/edit/', views.edit_profile, name='edit_profile'),
     path('profile/<str:username>/', views.profile, name='profile'),
     path('follow_toggle/<str:username>/', views.follow_toggle, name='follow_toggle'),
-    path('accounts/', RedirectView.as_view(url='/login/', permanent=True)),
+   
 
 
 ]
+
 
