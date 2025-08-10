@@ -1,4 +1,4 @@
-{% extends 'base.html' %} Iniciar sesión | Instagram Clone
+{% extends "feed/login.html" %}
 {% block content %}
 <h2 class="mb-4">Iniciar sesión</h2>
 <form method="post" class="mb-3">
@@ -7,4 +7,5 @@
 </form>
 <p>¿No tienes cuenta? <a href="{% url 'feed:register' %}">Regístrate</a></p>
 {% endblock %}
+
 
