@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1s*eog=605z4h!w^y2y(apjdz4bw_*m0sd_n1nbvg%1maxzgfr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['instawithdjango.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["instaproject-we1h.onrender.com"]
 
 
 # Application definition
@@ -129,3 +129,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
