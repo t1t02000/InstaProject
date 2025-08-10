@@ -17,9 +17,11 @@ urlpatterns = [
     path('profile/edit/', views.edit_profile, name='edit_profile'),
     path('profile/<str:username>/', views.profile, name='profile'),
     path('follow_toggle/<str:username>/', views.follow_toggle, name='follow_toggle'),
+    path('accounts/', include('django.contrib.auth.urls')),
    
 
 
 ]
+
 
 
