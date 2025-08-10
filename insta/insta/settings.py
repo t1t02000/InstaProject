@@ -1,5 +1,5 @@
 # Redirección después de login exitoso
-LOGIN_REDIRECT_URL = '/ogin/'
+LOGIN_REDIRECT_URL = '/login/'
 """
 Django settings for insta project.
 
@@ -129,6 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 
